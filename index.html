@@ -1,47 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>charity: water</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- Hero Section -->
+  <!-- Hero Section: Left Side Layout -->
+  <section class="hero">
+    <!-- 
+      This section is shifted to the left using simple CSS.
+      We use padding and margin to move it left, and set font to Proxima Nova (with fallback).
+      Font sizes are increased for better readability.
+      The header is split into two lines using a <br> tag.
+    -->
+    <div class="hero-content">
+      <!-- Logo for charity: water -->
+      <img src="img/charitywater_logo_horizontal_WhiteText.png" alt="charity: water logo" class="hero-logo" />
+      <!-- Main header: stacked on two lines using <br> -->
+      <h1 class="hero-title" style="font-size: 2.5em;">
+        A Better World Starts With
+        Clean Water and You.<br>
+      </h1>
+      <!-- Subheader: slightly smaller but still readable -->
+      <p class="hero-text" style="font-size: 1.5em;">Join a growing student movement bringing health, hope, and opportunity to communities around the world.</p>
+      <a href="#" class="button hero-button" style="font-size: 1.2em;">Donate Here</a>
+    </div>
+  </section>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+  <!-- Mission and Belief Section -->
+  <section class="mission-belief" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 8em; font-weight: 300;">
+    <!-- 
+      We set the font family to Open Sans (with fallbacks) and increase the font size for better readability.
+      The font size is set even larger (2em) and font weight is set to 300 for a thinner look.
+    -->
+    <div class="mission">
+      <h3 style="font-weight: 300;">our mission</h3>
+      <p style="font-weight: 300;">We’re building a movement where students don’t just learn about change, they become it. Through awareness, action, and advocacy, we believe college communities can help end the water crisis in our lifetime.</p>
+    </div>
+    <div class="belief">
+      <h3 style="font-weight: 300;">our belief</h3>
+      <p style="font-weight: 300;">College students have historically driven social change, and today’s generation is no exception. Your passion and determination are crucial for the clean water movement. Real change begins now, led by those who are courageous enough to act, advocate, and inspire others.</p>
+    </div>
+  </section>
+  </section>
+  <!-- Full-Width Image Section -->
+  <section class="full-width-image" style="padding: 0; margin: 0;">
+    <!-- 
+      This section displays an image that stretches to the sides of the page.
+      The image is set to 100% width and a taller height to fill the section better.
+      We use object-fit: cover so the image fills the area without distortion.
+    -->
+    <img 
+      src="img/JS_20170302_2-398_preview.jpg" 
+      alt="Feature" 
+      style="width: 100%; height: 750px; object-fit: cover; display: block; margin: 0; padding: 0;" 
+    />
+  </section>
+
+  <!-- Get Involved Section -->
+  <section class="get-involved">
+    <!-- Section header: </section>made larger for emphasis -->
+    <h2 style="font-size: 2.2em;">get: involved</h2>
+    <!-- The background image will be set in CSS for this section -->
+    <div class="get-involved-bg">
+      <div class="cards">
+        <!-- Each card is made larger using inline styles for width, padding, and font size -->
+        <div class="card" style="width: 320px; padding: 24px; font-size: 1.3em;">
+          <h4 style="font-size: 1.4em;">Donate</h4>
+          <p>No matter the amount, your donation will make a big difference in the lives of our beneficiaries.</p>
         </div>
+        <div class="card" style="width: 320px; padding: 24px; font-size: 1.3em;">
+          <h4 style="font-size: 1.4em;">Fundraise</h4>
+          <p>Join us in our fundraising efforts for community outreach and awareness campaigns.</p>
+        </div>
+        <div class="card" style="width: 320px; padding: 24px; font-size: 1.3em;">
+          <h4 style="font-size: 1.4em;">Share</h4>
+          <p>Please assist us in sharing our advocacy with your community and fellow college students.</p>
+        </div>
+      </div>
+      <!-- Learn More button under all cards -->
+      <br>
+      <a href="#" class="button" style="font-size: 1.2em;">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <!-- Section header: made larger for emphasis -->
+    <!-- Section header: made larger for emphasis, matching the Get Involved section -->
+    <h2 style="font-size: 2.2em;">student: testimonies</h2>
+    <p class="sub">STUDENTS TRANSFORMED THEIR PASSION INTO PURPOSE FROM CLASSROOMS TO COMMUNITIES.</p>
+    <div class="cards">
+      <div class="testimonial">
+        <img src="img/testimonial1.jpg" alt="Emma" />
+        <p>“I want to do more than just donate—I want to see my impact.”</p>
+        <span><strong>Emma</strong></span>
+      </div>
+      <div class="testimonial">
+        <img src="img/testimonial2.jpg" alt="Alex" />
+        <p>“Giving back should be easy, transparent, and something I can feel good about—even if it’s just $10.”</p>
+        <span><strong>Alex</strong></span>
+      </div>
+      <div class="testimonial">
+        <img src="img/testimonial3.jpg" alt="Taylor" />
+        <p>“I want to support causes that lead to real, measurable change.”</p>
+        <span><strong>Taylor</strong></span>
+      </div>
+    </div>
+    <br>
+    <!-- The button color is set to white using inline CSS -->
+    <a href="#" class="button" style="background-color: white; color: black;">Learn More</a>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
-</body>
-</html>
+    <!-- Contact Section with Image on the Right -->
+    <section class="contact-section" style="display: flex; background: #1A1A1A; color: #fff; padding: 32px 0;">
+    <!-- 
+      This section uses a simple flexbox to put the contact info on the left
+      and the image on the right. The background uses color code #1A1A1A, and text is white.
+    -->
+    <div class="contact-info" style="flex: 1; padding: 32px; min-width: 220px;">
+      <h3 style="font-size: 2em; margin-bottom: 16px;">contact: us</h3>
+      <p>
+        <strong>Phone</strong><br>
+        Tel: (1 646) 688-2323<br>
+        Fax: (1 929) 367-4827
+      </p>
+      <p>
+        <strong>Email</strong><br>
+        info@charitywater.org
+      </p>
+      <p>
+        <strong>Donation Address</strong><br>
+        230 Franklin Rd, Ste. 11-1<br>
+        Franklin, TN 37064
+      </p>
+    </div>
+    <div class="contact-image" style="flex: 1; display: flex; align-items: center; justify-content: center; min-width: 220px;">
+      <!-- 
+        The image is on the right side and fills the height of the section.
+        We set the image to fill the available space on the right.
+        width: 100% makes it fill the container, and height: 100% ensures it stretches vertically.
+        object-fit: cover makes sure the image covers the area without distortion.
+      -->
+      <img 
+        src="img/Malawi_2023_CG-8070.jpg" 
+        alt="Contact visual" 
+        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"
+      />
+      <!-- 
+        Make the contact info text larger so it fills the page more.
+        You can do this by increasing the font size in the contact-info div.
+        For example, add style="font-size: 1.5em;" to the contact-info div.
+      -->
+      />
+    </div>
+  </section>
